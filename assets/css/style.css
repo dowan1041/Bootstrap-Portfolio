@@ -9,7 +9,9 @@
         background-image: url(../images/houndstooth-pattern.png);
 
     }
-    
+    nav {
+        width: 100%;
+    }
     h3 {
         text-align: center;
         background-color: #4aaaa5;
@@ -19,6 +21,17 @@
         color: #4aaaa5;
         padding: 20px 0;
         border-bottom: 2px solid grey;
+    }
+    .navbar-brand {
+        background-color: #4aaaa5;
+        padding: 10px 40px;
+    }
+    #fontcolor {
+        color: #ffffff;
+
+    }
+    .thumbnail{
+        width: 100%;
     }
     #contentAbout{
         padding: 40px 20px;
@@ -54,26 +67,26 @@
         background-color: #f5f5f5;
         text-align: center;
     }
+    .empty {
+        background-color: none;
+    }
 
 
 
-@media screen and (max-width: 768px;) {
-    #sidebar {
-        display: none;
-        visibility: hidden;
+    @include media-breakpoint-up(xs) { 
+       
     }
-    .page-header{
-        width:80%;
-    }
-}
+    @include media-breakpoint-up(sm) { 
+       
 
-@media screen and (max-width: 640px;) {
-    #disebar {
-        display: none;
-        visibility: hidden;
     }
-    .page-header{
-        width:60%;
+    @include media-breakpoint-up(md) { 
+        #sidebar{
+            display: none;
+        }
+        body {
+            margin: 20px 40px;
+        }
+
     }
-    
 }
